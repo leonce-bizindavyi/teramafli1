@@ -28,7 +28,7 @@ function LastPost({ uniid ,setallMessage}) {
       } else if (videoId) {
         fetchLastPost(videoId);
       }
-    }, [uniid]);
+    }, [uniid,setallMessage]);
     return video;
   }
 
