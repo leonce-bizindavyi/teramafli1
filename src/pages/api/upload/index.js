@@ -13,7 +13,7 @@ export const config = {
 export default async function uploadHandler(req, res) {
   if (req.method === 'POST') {
     const form = new formidable.IncomingForm({
-      maxFileSize: 30 * 1024 * 1024, // 50 Go
+      maxFileSize: 30 * 1024 * 1024, // 30 Mo
     });
     form.multiples = true;
     // Parsez la requête
